@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ficha Scion - Mínima</title>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/main.tsx"></script>
     <style>
       :root {
         --bg: #0b0d12;
@@ -18,6 +18,11 @@
       }
 
       * { box-sizing: border-box; }
+
+      html, body, #root {
+        min-height: 100%;
+      }
+
       body {
         margin: 0;
         font-family: Inter, system-ui, sans-serif;
@@ -92,7 +97,8 @@
         color: var(--muted);
       }
 
-      .field input, .field textarea {
+      .field input,
+      .field textarea {
         width: 100%;
         background: var(--panel-2);
         border: 1px solid var(--line);
@@ -110,7 +116,9 @@
         border-bottom: 1px solid rgba(255,255,255,0.06);
       }
 
-      .row:last-child { border-bottom: none; }
+      .row:last-child {
+        border-bottom: none;
+      }
 
       .name {
         font-weight: 600;
@@ -127,7 +135,8 @@
         gap: 8px;
       }
 
-      .stepper button, .actions button {
+      .stepper button,
+      .actions button {
         background: var(--panel-2);
         border: 1px solid var(--line);
         color: var(--text);
