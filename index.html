@@ -1,254 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Pantheonexus Character Sheet</title>
+<div class="path-card">
 
-<link rel="stylesheet" href="style.css">
+  <div class="card-header">
+    <span class="section">IDENTITY</span>
+    <span class="sub">PROFESSIONAL</span>
+  </div>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-</head>
+  <div class="avatar">
+    <div class="avatar-placeholder">
+      NO VISUAL DATA
+    </div>
 
-<body>
+    <div class="character-name">
+      VALERIE HASTINGS
+    </div>
 
-<header class="topbar">
+    <div class="pantheon">
+      DIVINITATES
+    </div>
+  </div>
 
-<div class="logo">PANTHEONEXUS</div>
+  <div class="form-grid">
 
-<div class="character">
-<input placeholder="Character Name">
-</div>
+    <div class="field full">
+      <label>Designation (Name)</label>
+      <input type="text">
+    </div>
 
-<div class="user">
-User: <span>Player</span>
-</div>
+    <div class="field">
+      <label>Pantheon</label>
+      <input type="text">
+    </div>
 
-<button class="back">Back to Pantheon</button>
+    <div class="field">
+      <label>Heritage (Divine Parent)</label>
+      <input type="text">
+    </div>
 
-</header>
+    <div class="field">
+      <label>Date of Birth</label>
+      <input type="text">
+    </div>
 
-<div class="container">
+    <div class="field">
+      <label>Nationality</label>
+      <input type="text">
+    </div>
 
-<!-- PATH PROFILE -->
+    <div class="field">
+      <label>City of Origin</label>
+      <input type="text">
+    </div>
 
-<section class="panel">
+    <div class="field">
+      <label>State / Region</label>
+      <input type="text">
+    </div>
 
-<h2>PATH PROFILE</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Identity</h3>
-
-<label>Avatar</label>
-<input>
-
-<label>Pantheon</label>
-<input>
-
-<label>Divine Parent</label>
-<input>
-
-<label>Nationality</label>
-<input>
-
-</div>
-
-<div class="card">
-
-<h3>Divine Callings</h3>
-
-<div class="dotsRow">Calling 1<div class="dots"></div></div>
-<div class="dotsRow">Calling 2<div class="dots"></div></div>
-<div class="dotsRow">Calling 3<div class="dots"></div></div>
+  </div>
 
 </div>
-
-<div class="card">
-
-<h3>Nature</h3>
-
-<textarea placeholder="Character nature"></textarea>
-
-</div>
-
-<div class="card">
-
-<h3>Virtue Matrix</h3>
-
-<div class="dotsRow">Valor<div class="dots"></div></div>
-<div class="dotsRow">Harmony<div class="dots"></div></div>
-<div class="dotsRow">Order<div class="dots"></div></div>
-<div class="dotsRow">Piety<div class="dots"></div></div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PERSONAL PROFILES -->
-
-<section class="panel">
-
-<h2>PERSONAL PROFILES</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Public Profile</h3>
-
-<input placeholder="@handle">
-
-<textarea placeholder="Public bio"></textarea>
-
-</div>
-
-<div class="card">
-
-<h3>Presence Profile</h3>
-
-<input placeholder="Height">
-<input placeholder="Eye Color">
-<input placeholder="Hair Color">
-
-</div>
-
-<div class="card">
-
-<h3>Psychic Profile</h3>
-
-<textarea placeholder="Psychological notes"></textarea>
-
-</div>
-
-<div class="card">
-
-<h3>Professional Profile</h3>
-
-<textarea placeholder="Education History"></textarea>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- COMBAT PROFILE -->
-
-<section class="panel">
-
-<h2>COMBAT PROFILE</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Legend</h3>
-<input type="number">
-
-</div>
-
-<div class="card">
-
-<h3>Willpower</h3>
-<div class="dots"></div>
-
-</div>
-
-<div class="card">
-
-<h3>Vitality</h3>
-<div class="dots"></div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TRAIT PROFILE -->
-
-<section class="panel">
-
-<h2>TRAIT PROFILE</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Attributes</h3>
-
-<div class="dotsRow">Strength<div class="dots"></div></div>
-<div class="dotsRow">Dexterity<div class="dots"></div></div>
-<div class="dotsRow">Stamina<div class="dots"></div></div>
-
-</div>
-
-<div class="card">
-
-<h3>Abilities</h3>
-
-<ul>
-<li>Athletics</li>
-<li>Awareness</li>
-<li>Occult</li>
-<li>Science</li>
-<li>Stealth</li>
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- LEGACY PROFILE -->
-
-<section class="panel">
-
-<h2>LEGACY PROFILE</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Knacks</h3>
-
-<input placeholder="Search">
-
-</div>
-
-<div class="card">
-
-<h3>Boons</h3>
-
-<input placeholder="Search">
-
-</div>
-
-<div class="card">
-
-<h3>Birthrights</h3>
-
-<select>
-<option>Relic</option>
-<option>Creature</option>
-<option>Guide</option>
-<option>Followers</option>
-<option>Sanctum</option>
-</select>
-
-</div>
-
-</div>
-
-</section>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-</html>
