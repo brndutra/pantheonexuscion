@@ -78,6 +78,13 @@ grid-template-columns:1fr 1fr;
 gap:6px;
 }
 
+.profiles-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    width:100%;
+}
+
 /* DOTS */
 
 .dots span{
