@@ -1,0 +1,115 @@
+body{
+
+background:#050505;
+color:#ccc;
+font-family:Orbitron, sans-serif;
+
+}
+
+.container{
+
+max-width:1200px;
+margin:auto;
+padding:40px;
+
+}
+
+.section-title{
+
+color:#f0c400;
+letter-spacing:2px;
+margin-bottom:20px;
+
+}
+
+/* GRID 3 COLUNAS */
+
+.profiles-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+
+}
+
+/* CARD */
+
+.card{
+
+background:#0b0b0b;
+border:1px solid #333;
+border-radius:10px;
+padding:15px;
+min-height:260px;
+
+}
+
+/* HEADER */
+
+.card-header{
+
+color:#f0c400;
+font-weight:600;
+margin-bottom:10px;
+
+}
+
+/* INPUTS */
+
+input, textarea{
+
+width:100%;
+background:#060606;
+border:1px solid #222;
+color:#ddd;
+padding:6px;
+margin-bottom:6px;
+font-size:12px;
+
+}
+
+textarea{
+
+min-height:60px;
+
+}
+
+/* AVATAR */
+
+.avatar-box{
+
+height:180px;
+border:1px dashed #444;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:10px;
+
+}
+
+.character-name{
+
+color:#f0c400;
+font-size:18px;
+
+}
+
+.pantheon{
+
+color:#777;
+font-size:12px;
+
+}
+
+/* DOT RATING */
+
+.dots span{
+
+width:12px;
+height:12px;
+border:1px solid #f0c400;
+display:inline-block;
+margin-right:4px;
+cursor:pointer;
+
+}
