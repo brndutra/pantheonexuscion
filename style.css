@@ -1,14 +1,23 @@
 body{
-background:#070707;
+background:#050505;
 color:#eee;
 font-family:Orbitron;
 margin:0;
 }
 
 .topbar{
-padding:20px;
-border-bottom:1px solid #aa8800;
-color:#ffd000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#0b0b0b;
+border-bottom:1px solid #d4af37;
+}
+
+.logo{
+color:#d4af37;
+font-size:20px;
+letter-spacing:3px;
 }
 
 .container{
@@ -18,62 +27,63 @@ padding:30px;
 }
 
 .panel{
-border:1px solid #444;
-padding:20px;
 margin-bottom:40px;
-background:#0c0c0c;
+border:1px solid #333;
+background:#0d0d0d;
+padding:20px;
 }
 
 .panel h2{
-color:#ffd000;
-font-size:14px;
+color:#d4af37;
 letter-spacing:2px;
+font-size:14px;
 }
 
-.grid3{
+.grid{
 display:grid;
-grid-template-columns:1fr 1fr 1fr;
+grid-template-columns:repeat(2,1fr);
 gap:20px;
 }
 
 .card{
-border:1px solid #333;
-padding:16px;
-background:#111;
+border:1px solid #222;
+background:#121212;
+padding:15px;
 }
 
 .card h3{
-color:#ffd000;
+color:#d4af37;
 font-size:12px;
 }
 
-input, textarea{
+input,textarea,select{
 width:100%;
-background:#050505;
+background:#080808;
 border:1px solid #333;
 color:white;
-padding:5px;
-margin-bottom:10px;
-}
-
-.trait{
-display:flex;
-justify-content:space-between;
-margin:6px 0;
+padding:6px;
+margin-top:5px;
 }
 
 .dots{
 display:flex;
 gap:4px;
+margin-left:10px;
 }
 
 .dot{
 width:10px;
 height:10px;
-border:1px solid #ffd000;
+border:1px solid #d4af37;
 cursor:pointer;
 }
 
 .dot.active{
-background:#ffd000;
+background:#d4af37;
+}
+
+.dotsRow{
+display:flex;
+justify-content:space-between;
+margin:6px 0;
 }
