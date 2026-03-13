@@ -1,95 +1,89 @@
 body{
 background:#050505;
 color:#ccc;
-font-family:Orbitron;
-margin:0;
+font-family:Orbitron, sans-serif;
 }
 
-.header{
-display:flex;
-justify-content:space-between;
-padding:20px;
-border-bottom:1px solid #333;
-}
-
-.title{
+.section-title{
 color:#f0c400;
-font-size:30px;
+letter-spacing:2px;
+margin-bottom:15px;
 }
 
-.subtitle{
-font-size:12px;
-color:#999;
-}
+/* GRID PRINCIPAL */
 
-.header-info{
-font-size:12px;
-text-align:right;
-}
-
-.online{
-color:#00ff9c;
-}
-
-.container{
-width:1400px;
-margin:auto;
-padding:20px;
-}
-
-h2{
-color:#f0c400;
-margin-top:40px;
-}
-
-.grid3{
+.profiles-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
 }
 
-.card{
+/* CARDS */
+
+.profile-card{
 background:#0b0b0b;
 border:1px solid #333;
 padding:15px;
+min-height:260px;
 }
 
-.card h3{
+.profile-card h3{
 color:#f0c400;
-font-size:14px;
+font-size:13px;
+margin-bottom:10px;
 }
 
-input,textarea{
+/* AVATAR */
 
+.avatar-box{
+height:180px;
+border:1px dashed #444;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:10px;
+}
+
+.character-name{
+color:#f0c400;
+font-size:18px;
+}
+
+.pantheon{
+color:#777;
+font-size:12px;
+}
+
+/* INPUTS */
+
+input, textarea{
 width:100%;
 background:#060606;
 border:1px solid #222;
 color:#ddd;
 padding:6px;
 margin-bottom:6px;
+font-size:12px;
 }
 
 textarea{
 min-height:60px;
 }
 
-.avatar{
+/* GRIDS */
 
-height:160px;
-border:1px dashed #444;
-display:flex;
-align-items:center;
-justify-content:center;
-margin-bottom:10px;
-
+.grid2{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:6px;
 }
 
-.dots span{
+/* DOTS */
 
+.dots span{
+display:inline-block;
 width:12px;
 height:12px;
 border:1px solid #f0c400;
-display:inline-block;
 margin-right:4px;
-
 }
