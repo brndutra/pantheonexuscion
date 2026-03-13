@@ -1,23 +1,29 @@
-document.querySelectorAll(".dots").forEach(dotContainer => {
+// cria dots em todos os containers
+document.querySelectorAll(".dots").forEach(container => {
 
-for(let i=0;i<5;i++){
+    // cria 5 pontos
+    for (let i = 0; i < 5; i++) {
 
-let dot=document.createElement("span")
+        const dot = document.createElement("span")
 
-dot.addEventListener("click",()=>{
+        dot.addEventListener("click", () => {
 
-let dots=dotContainer.querySelectorAll("span")
+            const dots = container.querySelectorAll("span")
 
-dots.forEach((d,index)=>{
+            dots.forEach((d, index) => {
 
-d.style.background=index<=i ? "#f0c400":"transparent"
+                if(index <= i){
+                    d.style.background = "#f0c400"
+                } else {
+                    d.style.background = "transparent"
+                }
 
-})
+            })
 
-})
+        })
 
-dotContainer.appendChild(dot)
+        container.appendChild(dot)
 
-}
+    }
 
 })
