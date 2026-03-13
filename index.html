@@ -2,87 +2,132 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Pantheonexus Sheet</title>
+<title>Pantheonexus Character Sheet</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
 <header class="topbar">
-<h1>PANTHEONEXUS</h1>
-<span>SCION NEURAL LINK</span>
+
+<div class="logo">PANTHEONEXUS</div>
+
+<div class="character">
+<input placeholder="Character Name">
+</div>
+
+<div class="user">
+User: <span>Player</span>
+</div>
+
+<button class="back">Back to Pantheon</button>
+
 </header>
 
 <div class="container">
 
-<!-- PERSONAL PROFILE -->
+<!-- PATH PROFILE -->
 
 <section class="panel">
 
-<h2>// PERSONAL PROFILES</h2>
+<h2>PATH PROFILE</h2>
 
-<div class="grid3">
+<div class="grid">
 
 <div class="card">
+<h3>Identity</h3>
 
-<h3>PRESENCE PROFILE</h3>
-
-<label>Name</label>
-<input id="name">
+<label>Avatar</label>
+<input>
 
 <label>Pantheon</label>
-<input id="pantheon">
+<input>
 
-<label>Deity</label>
-<input id="deity">
+<label>Divine Parent</label>
+<input>
 
-<label>Calling</label>
-<input id="calling">
-
-</div>
-
-<div class="card">
-
-<h3>PSYCHIC PROFILE</h3>
-
-<label>Temperament</label>
-<input id="temperament">
-
-<label>Strengths</label>
-<input id="strengths">
-
-<label>Weaknesses</label>
-<input id="weaknesses">
+<label>Nationality</label>
+<input>
 
 </div>
 
 <div class="card">
 
-<h3>VIRTUE MATRIX</h3>
+<h3>Divine Callings</h3>
 
-<div class="trait">
-Valor
-<div class="dots" data-trait="valor"></div>
+<div class="dotsRow">Calling 1<div class="dots"></div></div>
+<div class="dotsRow">Calling 2<div class="dots"></div></div>
+<div class="dotsRow">Calling 3<div class="dots"></div></div>
+
 </div>
 
-<div class="trait">
-Harmony
-<div class="dots" data-trait="harmony"></div>
+<div class="card">
+
+<h3>Nature</h3>
+
+<textarea placeholder="Character nature"></textarea>
+
 </div>
 
-<div class="trait">
-Order
-<div class="dots" data-trait="order"></div>
+<div class="card">
+
+<h3>Virtue Matrix</h3>
+
+<div class="dotsRow">Valor<div class="dots"></div></div>
+<div class="dotsRow">Harmony<div class="dots"></div></div>
+<div class="dotsRow">Order<div class="dots"></div></div>
+<div class="dotsRow">Piety<div class="dots"></div></div>
+
 </div>
 
-<div class="trait">
-Piety
-<div class="dots" data-trait="piety"></div>
 </div>
+
+</section>
+
+<!-- PERSONAL PROFILES -->
+
+<section class="panel">
+
+<h2>PERSONAL PROFILES</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Public Profile</h3>
+
+<input placeholder="@handle">
+
+<textarea placeholder="Public bio"></textarea>
+
+</div>
+
+<div class="card">
+
+<h3>Presence Profile</h3>
+
+<input placeholder="Height">
+<input placeholder="Eye Color">
+<input placeholder="Hair Color">
+
+</div>
+
+<div class="card">
+
+<h3>Psychic Profile</h3>
+
+<textarea placeholder="Psychological notes"></textarea>
+
+</div>
+
+<div class="card">
+
+<h3>Professional Profile</h3>
+
+<textarea placeholder="Education History"></textarea>
 
 </div>
 
@@ -94,97 +139,64 @@ Piety
 
 <section class="panel">
 
-<h2>// COMBAT PROFILE</h2>
+<h2>COMBAT PROFILE</h2>
 
-<div class="grid3">
+<div class="grid">
 
 <div class="card">
-<h3>LEGEND</h3>
-<input id="legend" type="number">
+
+<h3>Legend</h3>
+<input type="number">
+
 </div>
 
 <div class="card">
-<h3>WILLPOWER</h3>
-<div class="dots" data-trait="willpower"></div>
+
+<h3>Willpower</h3>
+<div class="dots"></div>
+
 </div>
 
 <div class="card">
-<h3>VITALITY</h3>
-<div class="dots" data-trait="vitality"></div>
+
+<h3>Vitality</h3>
+<div class="dots"></div>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- ATTRIBUTES -->
+<!-- TRAIT PROFILE -->
 
 <section class="panel">
 
-<h2>// ATTRIBUTES</h2>
+<h2>TRAIT PROFILE</h2>
 
-<div class="grid3">
+<div class="grid">
 
 <div class="card">
 
-<h3>PHYSICAL</h3>
+<h3>Attributes</h3>
 
-<div class="trait">
-Strength
-<div class="dots" data-trait="strength"></div>
-</div>
-
-<div class="trait">
-Dexterity
-<div class="dots" data-trait="dexterity"></div>
-</div>
-
-<div class="trait">
-Stamina
-<div class="dots" data-trait="stamina"></div>
-</div>
+<div class="dotsRow">Strength<div class="dots"></div></div>
+<div class="dotsRow">Dexterity<div class="dots"></div></div>
+<div class="dotsRow">Stamina<div class="dots"></div></div>
 
 </div>
 
 <div class="card">
 
-<h3>SOCIAL</h3>
+<h3>Abilities</h3>
 
-<div class="trait">
-Charisma
-<div class="dots" data-trait="charisma"></div>
-</div>
-
-<div class="trait">
-Manipulation
-<div class="dots" data-trait="manipulation"></div>
-</div>
-
-<div class="trait">
-Appearance
-<div class="dots" data-trait="appearance"></div>
-</div>
-
-</div>
-
-<div class="card">
-
-<h3>MENTAL</h3>
-
-<div class="trait">
-Perception
-<div class="dots" data-trait="perception"></div>
-</div>
-
-<div class="trait">
-Intelligence
-<div class="dots" data-trait="intelligence"></div>
-</div>
-
-<div class="trait">
-Wits
-<div class="dots" data-trait="wits"></div>
-</div>
+<ul>
+<li>Athletics</li>
+<li>Awareness</li>
+<li>Occult</li>
+<li>Science</li>
+<li>Stealth</li>
+</ul>
 
 </div>
 
@@ -196,23 +208,38 @@ Wits
 
 <section class="panel">
 
-<h2>// LEGACY PROFILE</h2>
+<h2>LEGACY PROFILE</h2>
 
-<div class="grid3">
+<div class="grid">
 
 <div class="card">
-<h3>KNACKS</h3>
-<textarea id="knacks"></textarea>
+
+<h3>Knacks</h3>
+
+<input placeholder="Search">
+
 </div>
 
 <div class="card">
-<h3>BOONS</h3>
-<textarea id="boons"></textarea>
+
+<h3>Boons</h3>
+
+<input placeholder="Search">
+
 </div>
 
 <div class="card">
-<h3>BIRTHRIGHTS</h3>
-<textarea id="birthrights"></textarea>
+
+<h3>Birthrights</h3>
+
+<select>
+<option>Relic</option>
+<option>Creature</option>
+<option>Guide</option>
+<option>Followers</option>
+<option>Sanctum</option>
+</select>
+
 </div>
 
 </div>
@@ -221,7 +248,7 @@ Wits
 
 </div>
 
-<script src="app.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
