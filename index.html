@@ -1,206 +1,227 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ficha Scion - Mínima</title>
-    <script type="module" src="/main.tsx"></script>
-    <style>
-      :root {
-        --bg: #0b0d12;
-        --panel: #141923;
-        --panel-2: #1b2230;
-        --text: #eef2ff;
-        --muted: #9aa4b2;
-        --line: #2a3447;
-        --accent: #d4af37;
-        --danger: #d9534f;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pantheonexus Sheet</title>
 
-      * { box-sizing: border-box; }
+<link rel="stylesheet" href="style.css">
 
-      html, body, #root {
-        min-height: 100%;
-      }
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 
-      body {
-        margin: 0;
-        font-family: Inter, system-ui, sans-serif;
-        background: linear-gradient(180deg, #0b0d12 0%, #111827 100%);
-        color: var(--text);
-      }
+</head>
 
-      button, input, textarea, select {
-        font: inherit;
-      }
+<body>
 
-      .app {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 24px;
-      }
+<header class="topbar">
+<h1>PANTHEONEXUS</h1>
+<span>SCION NEURAL LINK</span>
+</header>
 
-      .title {
-        font-size: 28px;
-        font-weight: 800;
-        margin: 0 0 8px;
-      }
+<div class="container">
 
-      .subtitle {
-        color: var(--muted);
-        margin: 0 0 24px;
-      }
+<!-- PERSONAL PROFILE -->
 
-      .grid {
-        display: grid;
-        gap: 16px;
-      }
+<section class="panel">
 
-      .grid-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+<h2>// PERSONAL PROFILES</h2>
 
-      .grid-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
+<div class="grid3">
 
-      @media (max-width: 900px) {
-        .grid-2, .grid-3 {
-          grid-template-columns: 1fr;
-        }
-      }
+<div class="card">
 
-      .card {
-        background: rgba(20, 25, 35, 0.92);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-        padding: 16px;
-        box-shadow: 0 10px 24px rgba(0,0,0,0.22);
-      }
+<h3>PRESENCE PROFILE</h3>
 
-      .card h2 {
-        margin: 0 0 16px;
-        font-size: 18px;
-        color: var(--accent);
-      }
+<label>Name</label>
+<input id="name">
 
-      .field {
-        display: grid;
-        gap: 6px;
-        margin-bottom: 12px;
-      }
+<label>Pantheon</label>
+<input id="pantheon">
 
-      .field label {
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--muted);
-      }
+<label>Deity</label>
+<input id="deity">
 
-      .field input,
-      .field textarea {
-        width: 100%;
-        background: var(--panel-2);
-        border: 1px solid var(--line);
-        color: var(--text);
-        border-radius: 10px;
-        padding: 10px 12px;
-      }
+<label>Calling</label>
+<input id="calling">
 
-      .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 10px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.06);
-      }
+</div>
 
-      .row:last-child {
-        border-bottom: none;
-      }
+<div class="card">
 
-      .name {
-        font-weight: 600;
-      }
+<h3>PSYCHIC PROFILE</h3>
 
-      .muted {
-        color: var(--muted);
-        font-size: 13px;
-      }
+<label>Temperament</label>
+<input id="temperament">
 
-      .stepper {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
+<label>Strengths</label>
+<input id="strengths">
 
-      .stepper button,
-      .actions button {
-        background: var(--panel-2);
-        border: 1px solid var(--line);
-        color: var(--text);
-        border-radius: 10px;
-        padding: 8px 12px;
-        cursor: pointer;
-      }
+<label>Weaknesses</label>
+<input id="weaknesses">
 
-      .stepper span {
-        min-width: 24px;
-        text-align: center;
-        font-weight: 700;
-      }
+</div>
 
-      .actions {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-        margin-top: 20px;
-      }
+<div class="card">
 
-      .actions .primary {
-        border-color: #8a6d1d;
-        background: #2a2210;
-        color: #f3d77a;
-      }
+<h3>VIRTUE MATRIX</h3>
 
-      .actions .danger {
-        border-color: #5b2422;
-        background: #281313;
-        color: #ff9f9b;
-      }
+<div class="trait">
+Valor
+<div class="dots" data-trait="valor"></div>
+</div>
 
-      .health-track {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-      }
+<div class="trait">
+Harmony
+<div class="dots" data-trait="harmony"></div>
+</div>
 
-      .health-box {
-        width: 38px;
-        height: 38px;
-        border-radius: 10px;
-        border: 1px solid var(--line);
-        background: var(--panel-2);
-        color: var(--text);
-        display: grid;
-        place-items: center;
-        cursor: pointer;
-        font-weight: 800;
-      }
+<div class="trait">
+Order
+<div class="dots" data-trait="order"></div>
+</div>
 
-      .health-box[data-state="0"] { background: var(--panel-2); }
-      .health-box[data-state="1"] { background: #3a2d17; color: #f3d77a; }
-      .health-box[data-state="2"] { background: #41201f; color: #ffb2ae; }
-      .health-box[data-state="3"] { background: #5a0f0f; color: #fff; }
+<div class="trait">
+Piety
+<div class="dots" data-trait="piety"></div>
+</div>
 
-      .small {
-        font-size: 12px;
-        color: var(--muted);
-      }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+</div>
+
+</div>
+
+</section>
+
+<!-- COMBAT PROFILE -->
+
+<section class="panel">
+
+<h2>// COMBAT PROFILE</h2>
+
+<div class="grid3">
+
+<div class="card">
+<h3>LEGEND</h3>
+<input id="legend" type="number">
+</div>
+
+<div class="card">
+<h3>WILLPOWER</h3>
+<div class="dots" data-trait="willpower"></div>
+</div>
+
+<div class="card">
+<h3>VITALITY</h3>
+<div class="dots" data-trait="vitality"></div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ATTRIBUTES -->
+
+<section class="panel">
+
+<h2>// ATTRIBUTES</h2>
+
+<div class="grid3">
+
+<div class="card">
+
+<h3>PHYSICAL</h3>
+
+<div class="trait">
+Strength
+<div class="dots" data-trait="strength"></div>
+</div>
+
+<div class="trait">
+Dexterity
+<div class="dots" data-trait="dexterity"></div>
+</div>
+
+<div class="trait">
+Stamina
+<div class="dots" data-trait="stamina"></div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>SOCIAL</h3>
+
+<div class="trait">
+Charisma
+<div class="dots" data-trait="charisma"></div>
+</div>
+
+<div class="trait">
+Manipulation
+<div class="dots" data-trait="manipulation"></div>
+</div>
+
+<div class="trait">
+Appearance
+<div class="dots" data-trait="appearance"></div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>MENTAL</h3>
+
+<div class="trait">
+Perception
+<div class="dots" data-trait="perception"></div>
+</div>
+
+<div class="trait">
+Intelligence
+<div class="dots" data-trait="intelligence"></div>
+</div>
+
+<div class="trait">
+Wits
+<div class="dots" data-trait="wits"></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LEGACY PROFILE -->
+
+<section class="panel">
+
+<h2>// LEGACY PROFILE</h2>
+
+<div class="grid3">
+
+<div class="card">
+<h3>KNACKS</h3>
+<textarea id="knacks"></textarea>
+</div>
+
+<div class="card">
+<h3>BOONS</h3>
+<textarea id="boons"></textarea>
+</div>
+
+<div class="card">
+<h3>BIRTHRIGHTS</h3>
+<textarea id="birthrights"></textarea>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
 </html>
