@@ -1,89 +1,95 @@
 body{
 background:#050505;
-color:#eee;
+color:#ccc;
 font-family:Orbitron;
 margin:0;
 }
 
-.topbar{
+.header{
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:15px;
-background:#0b0b0b;
-border-bottom:1px solid #d4af37;
+padding:20px;
+border-bottom:1px solid #333;
 }
 
-.logo{
-color:#d4af37;
-font-size:20px;
-letter-spacing:3px;
+.title{
+color:#f0c400;
+font-size:30px;
+}
+
+.subtitle{
+font-size:12px;
+color:#999;
+}
+
+.header-info{
+font-size:12px;
+text-align:right;
+}
+
+.online{
+color:#00ff9c;
 }
 
 .container{
-width:1200px;
+width:1400px;
 margin:auto;
-padding:30px;
-}
-
-.panel{
-margin-bottom:40px;
-border:1px solid #333;
-background:#0d0d0d;
 padding:20px;
 }
 
-.panel h2{
-color:#d4af37;
-letter-spacing:2px;
-font-size:14px;
+h2{
+color:#f0c400;
+margin-top:40px;
 }
 
-.grid{
+.grid3{
 display:grid;
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:repeat(3,1fr);
 gap:20px;
 }
 
 .card{
-border:1px solid #222;
-background:#121212;
+background:#0b0b0b;
+border:1px solid #333;
 padding:15px;
 }
 
 .card h3{
-color:#d4af37;
-font-size:12px;
+color:#f0c400;
+font-size:14px;
 }
 
-input,textarea,select{
+input,textarea{
+
 width:100%;
-background:#080808;
-border:1px solid #333;
-color:white;
+background:#060606;
+border:1px solid #222;
+color:#ddd;
 padding:6px;
-margin-top:5px;
+margin-bottom:6px;
 }
 
-.dots{
+textarea{
+min-height:60px;
+}
+
+.avatar{
+
+height:160px;
+border:1px dashed #444;
 display:flex;
-gap:4px;
-margin-left:10px;
+align-items:center;
+justify-content:center;
+margin-bottom:10px;
+
 }
 
-.dot{
-width:10px;
-height:10px;
-border:1px solid #d4af37;
-cursor:pointer;
-}
+.dots span{
 
-.dot.active{
-background:#d4af37;
-}
+width:12px;
+height:12px;
+border:1px solid #f0c400;
+display:inline-block;
+margin-right:4px;
 
-.dotsRow{
-display:flex;
-justify-content:space-between;
-margin:6px 0;
 }
